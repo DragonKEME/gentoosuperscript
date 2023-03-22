@@ -19,6 +19,8 @@ sf="ext4"
 # Doc: https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation/fr#Cr.C3.A9er_des_syst.C3.A8mes_de_fichiers
 
 # Partitionnement du disque
+# Le fichier fdisk.comand contient toutes les commandes a entrer dans fdisk pour creer les partion demandé.
+# En exam il est plutôt recommandé d'utiliser cfdisk
 fdisk /dev/$dev < fdisk.comand
 
 # Formatage des système de fichier et du swap
