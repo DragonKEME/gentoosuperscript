@@ -32,3 +32,5 @@ Une fois dans le chroot (votre prompt affiche `quelquechose + / #`) :
 Pour gagner du temps vous pouvez décommenter les appels aux différents script dans `gentoo-install-after-chroot.sh`
 
 ### Des explication sur les commandes sont dans les script, mais n'hésitez à demander si vous avez une question
+
+Note: Tous les tests ont été fais avec qemu/kvm il se peut que des bug apparaissent sur vmware.
