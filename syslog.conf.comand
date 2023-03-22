@@ -1,0 +1,17 @@
+
+# Gentoo install superscript (TD8 -> FISA)
+# by @DragonKEME
+
+destination d_login {file("/var/log/login.log");};
+
+filter f_login {
+    program("sshd.*")
+    and match ("failure|opened");
+};
+
+log {
+    source(src);
+    filter(f_login);
+    destination(d_login);
+};
+
